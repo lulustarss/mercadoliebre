@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <title>MercadoLiebre Argentina</title>
+</head>
+<body>
+    <!--Icons
+    Search: <i class='bx bx-search'></i>
+    ID Card: <i class='bx bx-id-card'></i>
+    Door: <i class='bx bxs-door-open'></i> 
+    Hand: <i class='bx bxs-donate-heart'></i>
+    Facebook: <i class='bx bxl-facebook-circle'></i>
+    Instagram: <i class='bx bxl-instagram'></i>
+    LinkedIn: <i class='bx bxl-linkedin' ></i>
+    Youtube: <i class='bx bxl-youtube'></i> -->
+
+<header>
+        <div class="contenedor1">
+             <a href="#"><img class="logoheader" src="./img/mercado-liebre.png" alt=""></a> 
+            <div class="columna1"> <p> <i class='bx bxs-donate-heart'></i> Todas las opiniones en un solo lugar.⠀</p></div>
+        </div>
+    
+        <div class="contenedor2">
+            <a href="#"><button class="btn btn-warning">Todos los productos</button></a>
+            <div class="columna2"> 
+              
+              <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#dialogo1"> Creá tu cuenta 
+              </button> 
+                <div class="modal fade" id="dialogo1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                          
+                        <p class="texto-centro"><strong>Registro</strong></p>
+                            <div>
+                            <form class="formulario" method="post" data-netlify="true">
+                              
+                              <div><label for="nombre">Nombre⠀ ⠀</label> 
+                                <input type=text required>
+                                </div>
+                                <div>
+                                <label for="nombre">Email⠀⠀⠀⠀</label> 
+                                <input type="email" required>
+                                </div>
+                                <div>
+                                <label for="nombre">Contraseña</label> 
+                                <input type="password" required>
+                                <br><br>
+                                <input class="btn btn-outline-primary" type="submit" value="Registrarse">
+                                <input class="btn btn-outline-danger" type="reset" value="Borrar">
+                              
+                              </div>
+                            </form>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+
+              <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#dialogo2"> Ingresá 
+              </button> 
+                 <div class="modal fade" id="dialogo2">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                            
+                          <p class="texto-centro"><strong>Inicio de sesión</strong></p>
+                              <div>
+                              <form class="formulario" method="post" data-netlify="true">
+                                  <div>
+                                  <label for="nombre">Email⠀⠀⠀⠀</label> 
+                                  <input type="email" required>
+                                  </div>
+                                  <div>
+                                  <label for="nombre">Contraseña</label> 
+                                  <input type="password" required>
+                                  <br><br>
+                                  <input class="btn btn-outline-primary" type="submit" value="Ingresá">
+                                  <input class="btn btn-outline-danger" type="reset" value="Borrar">
+                                
+                                </div>
+                              </form>
+                              </div>
+                        </div>
+                      </div>
+                  </div>
+                
+                <div class="columna2">
+            </div>
+        </div>     
+</header>
+
+<section class="espacio">
+     <!-- CARRUSEL -->
+     <div id="carouselExample" class="carousel slide banner">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/banner1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/banner2.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+</section>
+
+
+<main class="container-fluid"> 
+
+  <!-- Advertencia -->
+  <div class="alert alert-danger" role="alert">
+    Este sitio no está optimizado para tu dispositivo. Es posible que algunos elementos no se muestren como es debido.
+    <br>
+    Disculpá las molestias.
+  </div>
+
+  <!-- OFERTAS -->
+
+    <section class="NuestrasOfertas">
+
+        <h2>Disfrutá nuestras ofertas</h2>
+        
+      <!-- TAMAÑO REGULAR -->
+
+        <div class="ofertas ofertas-md">
+            <div class="card producto-oferta">
+                <img src="./img/productos/img-cafetera-moulinex.jpg" alt="Cafetera">
+                <div><span><strong>Cafetera Moulinex</strong></span> <button>comprar</button></div>
+            </div>
+            <div class="card producto-oferta">
+                <img src="./img/productos/img-macbook-pro-2019.jpg" alt="Macbook">
+                <div><span><strong>Macbook Pro 2014</strong></span> <button>comprar</button></div>
+            </div>
+            <div class="card producto-oferta">
+                <img src="./img/productos/img-tv-samsung-smart.jpg" alt="TV">
+                <div><span><strong>TV LG 40 pulgadas</strong></span> <button>comprar</button></div>
+            </div>
+            <div class="card producto-oferta">
+                <img src="./img/productos/img-samsung-galaxy-s10.jpg" alt="SamsungGalaxy">
+                <div><span><strong>Samsung Galaxy</strong></span> <button>comprar</button></div>
+          </div>
+        </div>
+
+        <!-- TAMAÑO MÓVILES -->
+
+        <div class="ofertas container ofertas-sm">
+          <div class=" row">
+            <div class="card producto-oferta m-1 col-5 col-md-2 offset-2">
+                <img src="./img/productos/img-cafetera-moulinex.jpg" alt="Cafetera">
+                <div><span><strong>Cafetera Moulinex</strong></span> <button>comprar</button></div>
+            </div>
+            <div class="card producto-oferta m-1 col-5 col-md-2 offset-2">
+                <img src="./img/productos/img-macbook-pro-2019.jpg" alt="Macbook">
+                <div><span><strong>Macbook Pro 2014</strong></span> <button>comprar</button></div>
+            </div>
+            <div class="card producto-oferta m-1 col-5 col-md-2 offset-2">
+                <img src="./img/productos/img-tv-samsung-smart.jpg" alt="TV">
+                <div><span><strong>TV LG 40 pulgadas</strong></span> <button>comprar</button></div>
+            </div>
+            <div class="card producto-oferta m-1 col-5 col-md-2 offset-2">
+                <img src="./img/productos/img-samsung-galaxy-s10.jpg" alt="SamsungGalaxy">
+                <div><span><strong>Samsung Galaxy</strong></span> <button>comprar</button></div>
+          </div>
+          </div>
+        </div>
+
+    </section>
+
+    <hr>
+
+<!-- DESTACADOS -->
+
+    <section class="ProductosDestacados container"><h2>Productos destacados</h2>
+        <div class="destacados">
+            <div class="card producto-destacado">
+                <img src="./img/productos/img-samsung-galaxy-s10.jpg" alt="">
+                <p class="centrado sombreado"><strong>Smartphone Samsung Galaxy</strong></p>
+            </div>
+            <div class="card producto-destacado">
+                <img src="./img/productos/img-tv-samsung-smart.jpg" alt="TV">
+                <p class="centrado sombreado"><strong>TV Smart 40" Samsung</strong></p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="container"> 
+  <hr>
+<div class="row">
+  <div class="col">
+    <p> <strong>Seguinos</strong> </p>
+    <p><i class='bx bxl-facebook-circle'></i> Facebook</p>
+    <p><i class='bx bxl-instagram'></i> Instagram</p>
+    <p><i class='bx bxl-linkedin' ></i> LinkedIn</p>
+    <p><i class='bx bxl-youtube'></i> Youtube</p>
+  </div>
+
+  <div class="col footer-center">
+    <p><strong>Otros servicios</strong></p>
+    <p>MercadoLiebre pago</p>
+    <p>MercadoLiebre Shops</p>
+    <p>Liebre Envíos</p>
+  </div>
+
+  <div class="col">
+    <span><strong>Trabajá con Nosotros</strong></span>
+    <form method="post" data-netlify="true">
+    <input type="email" placeholder=" Ingresá tu email" required>
+    <input type="submit" class="btn">
+    </form>
+  </div>
+
+</div>
+
+
+</footer>
+
+
+</body>
+</html>

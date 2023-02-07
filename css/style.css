@@ -1,0 +1,245 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; (???)
+color de contenedor #fbbc02*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+body{
+    width: 100%;
+}
+
+.alert{
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    .alert{
+        display:block;
+    }
+}
+
+/* Header */
+
+header{
+    position: absolute;
+    height: 8rem;
+    width: 100%;
+    background-color: #fbbc02;
+    font-size: 16px;
+}
+div{
+    display: inline-block;
+    border: 1px;
+}
+.logo{
+    position: absolute;
+    width: 100%;
+}
+.logoheader{
+    width: 150px;
+}
+.columna1{
+    text-align:right;
+}
+.contenedor1{
+    margin-top: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenedor2{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:436px) {
+    .contenedor1, .contenedor2{
+        margin-top: 0px;
+    }
+}
+
+.columna2{
+    display: flex;
+    margin-right: 20px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+}
+
+.texto-centro{
+    text-align: center;
+}
+
+.botones-registro{
+    display:flex;
+    justify-content:center
+}
+
+#dialogo1, #dialogo2{
+    padding:150px;
+}
+
+/* Main */
+main{
+    position: relative;
+    margin: 0;
+    top: 8rem;
+}
+
+.espacio{
+    position: relative;
+    top: 120px;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    margin: 15px, 0, 15px;
+}
+.banner{
+    width: 100%;   
+}
+
+/* Ofertas */
+
+.ofertas{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 640px) {
+    .ofertas-md {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .ofertas-sm {
+        display: none;
+    }
+
+}
+
+    .ofertas .row{
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+.ofertas button{
+    width: 100px;
+    max-width: fit-content;
+    height: 1.5rem;
+    background-color: #3483fa;
+    padding: 0 5px 5px 5px ;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ofertas .card{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    margin: 1%;
+    padding: 0px;
+    border-radius: 10px;
+    border: 1px solid rgb(160, 160, 160); 
+}
+
+.card img {
+    width: 100%;
+    height: 80%;
+    max-width: 300px;
+    max-height:290px ;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* Destacados */
+
+.destacados{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.destacados .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 75%;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2.5px solid rgb(160, 160, 160);
+}
+
+.destacados img{
+    height: max-content;
+}
+.destacados img:hover{
+    opacity: 50%;
+}
+
+.producto-destacado{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sombreado{
+    text-shadow: 1.3px 1.3px rgb(121, 121, 121)
+}
+
+/* footer */
+
+footer{
+    position: relative;
+    top:8rem;
+    font-weight: 500;
+}
+
+footer .footer-center {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+
+
+footer .btn {
+    border: none;
+    background-color: #3483fa;
+    color: white;
+    border-radius: 5px;
+    padding: 2.5px 5px 5px 5px;
+    height: 30px;
+    width: 80px;
+}
